@@ -15,7 +15,7 @@ public class GetName{
 	@Test()
 	public void login() {
 		
-		RestAssured.baseURI = "http://localhost:9001/api";
+		RestAssured.baseURI = "http://localhost:9002/api";
 		Response response = RestAssured.get("/Babu");
 		
 		Assert.assertEquals(true, response.getStatusCode() == 200);
